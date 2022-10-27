@@ -11,8 +11,9 @@
 
 Denominados conjuntos, las propiedades alrededor de los conjuntos es que
 
-* Se pueden modificar
+* Se pueden modificar.
 * No tienen un orden.
-* No permiten duplicados 
+* No permiten duplicados, por lo tanto, estos conjuntos sacan términos únicos y si se repiten simplemente
+no los imprime o los toma en cuenta. 
 
 
