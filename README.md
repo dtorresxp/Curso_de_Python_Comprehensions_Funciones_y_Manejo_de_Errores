@@ -2,7 +2,7 @@
 
 **Nuevo Curso de Comprehension Lists, Funciones y Manejo de Errores**
 
-<p align="center"><img width=50% src="./pictures/python_logo.png"></p>
+<p align="center"><img width=40% src="./pictures/python_logo.png"></p>
 
 # Table of Content 
 
