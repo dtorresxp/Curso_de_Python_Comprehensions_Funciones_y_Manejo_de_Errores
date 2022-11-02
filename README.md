@@ -115,3 +115,12 @@ print(numbers)
 numbers_v2 = [i*2 for i in range(1,11) if i%2 == 0]
 print(numbers_v2)
 ```
+
+# Dictionary Comprehension
+
+Al igual que las listas, tenemos una sintáxis similar, por ejemplo:
+
+{key:value for var in iterable}
+
+Elemento llave:valor y el Ciclo donde se extrarn elementos de cualquier iterable 
+
