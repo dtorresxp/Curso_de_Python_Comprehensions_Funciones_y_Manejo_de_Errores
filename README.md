@@ -124,3 +124,8 @@ Al igual que las listas, tenemos una sintáxis similar, por ejemplo:
 
 Elemento llave:valor y el Ciclo donde se extrarn elementos de cualquier iterable 
 
+# Dictionary Comprehension: Condition 
+
+{key:value for var in iterable if condition}
+
+Elemento llave:valor, el Ciclo donde se extrarn elementos de cualquier iterable y condición opcional para filtrar elementos. 
