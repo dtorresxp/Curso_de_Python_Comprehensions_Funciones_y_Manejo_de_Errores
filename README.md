@@ -81,3 +81,37 @@ print(set_c)
 print(set_a ^ set_b)                #El operador "^" permite hacer la diferencia simétrica
 ```
 
+# List Comprehension
+
+[element for element in iterable]
+
+En la sintáxis tenemos elemento y el ciclo donde se extraen elementos de cualquier iterable
+
+```Python
+numbers = []
+
+for element in range(1,11):
+    numbers.append(element*2)
+    
+print(numbers)
+
+numbers_v2 = [element*2 for element in range(1,11)] #Por cada elemento del iterable se está agregando un 
+print(numbers_v2)                                   #elemento a la lista
+```
+
+[element for element in iterable if condition]
+
+En este caso tenemos el elemento, ciclo donde se extraen elementos de cualquier iterable y la condición opcional para filtrar elementos 
+
+```Python
+numbers = []
+
+for i in range(1,11):
+    if i%2 == 0:
+        numbers.append(i*2)
+
+print(numbers)
+
+numbers_v2 = [i*2 for i in range(1,11) if i%2 == 0]
+print(numbers_v2)
+```
