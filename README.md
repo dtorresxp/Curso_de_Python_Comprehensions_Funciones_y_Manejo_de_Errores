@@ -9,6 +9,10 @@
 - [Sets](#sets)
 - [Modificando Conjuntos](#modificando-conjuntos)
 - [Operaciones de Conjuntos](#operaciones-de-conjuntos)
+- [List Comprehension](#list-comprehension)
+- [Dictionary comprehension](#dictionary-comprehension)
+- [Dictionary Comprehension: Condition](#dictionary-comprehension-condition)
+- [Lists vs. Tuples vs. Sets](#lists-vs-tuples-vs-sets)
 
 # Sets
 
