@@ -129,3 +129,7 @@ Elemento llave:valor y el Ciclo donde se extrarn elementos de cualquier iterable
 {key:value for var in iterable if condition}
 
 Elemento llave:valor, el Ciclo donde se extrarn elementos de cualquier iterable y condición opcional para filtrar elementos. 
+
+# Lists vs. Tuples vs. Sets
+
+<p align="center"><img width=40% src="./pictures/list_tuples_sets.png"></p>
