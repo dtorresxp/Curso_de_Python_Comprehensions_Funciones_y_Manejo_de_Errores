@@ -137,3 +137,7 @@ Elemento llave:valor, el Ciclo donde se extrarn elementos de cualquier iterable 
 # Lists vs. Tuples vs. Sets
 
 <p align="center"><img width=40% src="./pictures/list_tuples_sets.png"></p>
+
+# Funciones
+
+Las funciones son estructuras de código para poder reutilizar las líneas ya escritas 
