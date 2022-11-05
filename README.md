@@ -188,3 +188,22 @@ print(width)
 print(string)
 ```
 
+# El Scope
+
+Se crea para definir el alcance que tiene una variable para poder trabajar con ella, para entender mejor dentro de una función puede haber variables, las cuales se llaman **variables locales**.Estas variables locales, se identifican porque están escritas dentro de la definición de la función y únicamente funcionan mientras que la función sea llamada o utlizada. si vas allamar a una variable local por fuera de la función, noservirá, existen **variables globales**, que son las que están escritas fuera de la función. Estas variables si funcionan al ser llamadas sin la función, porque no están determinadas dentro de la función. 
+
+```Python
+price = 100
+
+def increment():
+    # price = price + 10    #Genera un error de asignación 
+    price = 200
+    price = price +10
+    print(price)
+    return price
+
+print(price)
+price_2 = increment()
+print(price_2)
+```
+
