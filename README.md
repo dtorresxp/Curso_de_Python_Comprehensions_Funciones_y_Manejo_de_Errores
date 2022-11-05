@@ -141,3 +141,50 @@ Elemento llave:valor, el Ciclo donde se extrarn elementos de cualquier iterable 
 # Funciones
 
 Las funciones son estructuras de código para poder reutilizar las líneas ya escritas 
+
+```Python
+def my_print(text):
+    print(text*2)
+
+def suma(a,b):
+    return print(a+b)
+
+my_print('Este es mi texto ')
+my_print('Hola ')
+
+suma(14,12)
+suma(20,22)
+```
+
+# funciones con Return 
+```Python
+def sum_with_range(min,max):
+    print(min, max)
+    sum = 0
+    for x in range(min,max):
+        sum += x
+
+    return sum
+
+result = sum_with_range(1,10)
+print(result)
+result_2 = sum_with_range(20,30)
+print(result_2)
+result_3 = sum_with_range(result,result_2)
+print(result_3)
+```
+
+# Parametros por defecto y múltiples return 
+
+Retornar más de un valor y ver a profundidad los argumentos 
+
+```Python
+def find_volume(length = 1,width = 1,depth = 1):
+    return length*width*depth, width, 'hola'
+
+result,width,string = find_volume(width = 10)
+print(result)
+print(width)
+print(string)
+```
+
