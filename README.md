@@ -515,4 +515,8 @@ counter = collections.Counter(numbers)
 print(counter)              #Saber la frecuencia en la que aparece cada número 
 ```
 
+# Modulos propios 
+
+Un módulo es cualquier archivo con terminación <<.py>>, dentro de un módulo se pueden definir clases, funciones o variables
+
 
