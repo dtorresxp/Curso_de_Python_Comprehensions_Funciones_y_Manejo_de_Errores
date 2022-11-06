@@ -465,3 +465,28 @@ numbers = [1,2,3,4,5]
 new_numbers = list(filter(lambda x: x%2 == 0, numbers))  #Siempre se valida el valor True
 print(new_numbers)
 ```
+
+# Reduce
+
+Tomar una lista y reducirlo a un solo valor, por ejemplo, tenemos una lista de números y queremos sumar todos esos números, por lo tanto se reduce a un solo valor, o también verificar cual es el mayor o menor 
+
+```Python
+from functools import reduce
+
+def accum(counter,item):
+    print('Counter=>',counter)
+    print('Item=>',item)
+
+    return counter + item
+
+numbers = [1,2,3,4]
+
+result = reduce(lambda counter, item : counter+item,numbers)    #La primer variable incrementará el valor y la segunda
+                                                                #que es el ítem que se va a estar iterando
+print(result)
+
+result2 = reduce(accum,numbers)
+print(result2)
+```
+
+
