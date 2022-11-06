@@ -525,3 +525,6 @@ Los módulos se pueden correr de dos maneras, una es declarando las funciones de
 
 # Paquetes
 
+Un paquete es una arpeta que contiene varios módulos. 
+
+
