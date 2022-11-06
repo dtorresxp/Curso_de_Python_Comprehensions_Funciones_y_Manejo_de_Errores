@@ -419,4 +419,49 @@ if __name__ == '__main__':
     run()
 ```
 
+# Map con inmutabilidad 
 
+```Python 
+def add_taxes(item):
+    new_item = item.copy()                      #Se crea una nueva lista, para evitar los cambios en memoria
+    new_item['taxes'] = new_item['price']*.19
+    return new_item
+
+def run():
+    
+    items  = [
+        {
+            'producto':'shirt',
+            'price':100,
+        },
+        {
+            'product':'pants',
+            'price':300
+        },
+        {
+            'product':'shoes',
+            'price':200
+        }
+    ]
+
+    new_items = list(map(add_taxes,items))
+    print('New List')
+    print(new_items)
+    print('Old List')
+    print(items)
+
+
+if __name__ == '__main__':
+    run()
+```
+
+# Filter 
+
+Sirve para filtrar elementos de una lista para que pertenezcan a una nueva lista. Ejemplo, tenemos una nueva lista de comida, se aplica un filtro, por lo tanto será un condicional que diga si es saludable o no.
+
+```Python
+numbers = [1,2,3,4,5]
+
+new_numbers = list(filter(lambda x: x%2 == 0, numbers))  #Siempre se valida el valor True
+print(new_numbers)
+```
