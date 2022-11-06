@@ -525,6 +525,9 @@ Los módulos se pueden correr de dos maneras, una es declarando las funciones de
 
 # Paquetes
 
-Un paquete es una arpeta que contiene varios módulos. 
+Un paquete es una carpeta que contiene varios módulos. 
 
+# Iterables 
+
+Otro tipo de iterables que se pueden controlar directamente en el código y no por ciclos 
 
