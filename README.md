@@ -519,4 +519,9 @@ print(counter)              #Saber la frecuencia en la que aparece cada número
 
 Un módulo es cualquier archivo con terminación <<.py>>, dentro de un módulo se pueden definir clases, funciones o variables
 
+# Módulos como Scripts: __name__ y __main__
+
+Los módulos se pueden correr de dos maneras, una es declarando las funciones dentro de ese módulo y se los pueden correr de forma directa como Scripts, sin embrago esta dualidad puede generar errores o conflictos 
+
+# Paquetes
 
