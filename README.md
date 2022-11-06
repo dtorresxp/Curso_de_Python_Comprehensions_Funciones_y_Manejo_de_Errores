@@ -209,5 +209,143 @@ print(price_2)
 
 # Refactor Game
 
+```Python
+import random
+
+def choose_options():
+    
+    options = ('piedra', 'papel', 'tijera')
+
+    user_option = input('piedra, papel o tijera => ')
+    user_option = user_option.lower()
+
+    if not user_option in options:
+      print('esa opcion no es valida')
+      #continue
+      return None, None
+
+    computer_option = random.choice(options)
+
+    print('User option =>', user_option)
+    print('Computer option =>', computer_option)
+
+    return user_option, computer_option
+
+def check_rules(user_option, computer_option, user_wins, computer_wins):
+
+    if user_option == computer_option:
+        print('Empate!')
+    elif user_option == 'piedra':
+        if computer_option == 'tijera':
+            print('piedra gana a tijera')
+            print('user gano!')
+            user_wins += 1
+        else:
+            print('Papel gana a piedra')
+            print('computer gano!')
+            computer_wins += 1
+    elif user_option == 'papel':
+        if computer_option == 'piedra':
+            print('papel gana a piedra')
+            print('user gano')
+            user_wins += 1
+        else:
+            print('tijera gana a papel')
+            print('computer gano!')
+            computer_wins += 1
+    elif user_option == 'tijera':
+        if computer_option == 'papel':
+            print('tijera gana a papel')
+            print('user gano!')
+            user_wins += 1
+        else:
+            print('piedra gana a tijera')
+            print('computer gano!')
+            computer_wins += 1
+
+    return user_wins, computer_wins
+
+def run_game():
+    rounds = 1
+    computer_wins = 0
+    user_wins = 0
+
+    while True:
+
+        print('*' * 10)
+        print('ROUND', rounds)
+        print('*' * 10)
+
+        print('computer_wins', computer_wins)
+        print('user_wins', user_wins)
+        
+        rounds += 1
+
+        user_option, computer_option = choose_options()
+        user_wins, computer_wins = check_rules(user_option, computer_option, user_wins, computer_wins)
+
+        
+        if computer_wins == 2:
+            print('El ganador es la computadora')
+            break
+
+        if user_wins == 2:
+            print('El ganador es el usuario')
+            break
+
+run_game()
+```
+
+# Funciones Anónimas: Lambda
+
+Son funciones especiales e interesantes puesto que permiten versatilidad a la hora de declarar y manejar ciertas sintaxis para las funciones. 
+
+```Python
+def increment(x):
+    return x+1
+
+# Para transformar en una lambda function se reconocen los parametros de entrada
+# y los parámetros de salida, en este caso input = x y output = x+1
+
+increment_v2 = lambda x : x+1
+full_name = lambda name, last_name : str(name) + " " + str(last_name)
+
+def run():
+    result = increment(10)
+    print(result)
+
+    result = increment_v2(20)
+    print(result)
+
+    print(full_name("Mario","Riascos"))
+
+if __name__ == '__main__':
+    run()
+```
+
+# High Order Function: Una Función dentro de otra función
+
+A una función se le puede enviar otra función y ejecutarla dentro de la primer función 
+
+```Python
+def increment(x):
+    return x+1
 
 
+def high_order_function(x, func):                       #Se envia unicamente el nombre de la func sin parámetros
+    return x + func(x)                                  #En el return se ejecuta la fución
+
+increment_v2 = lambda x : x+1
+
+high_order_function_v2 = lambda x, func : x + func(x)   #La entrada es el nombre de la funcion sin parámetros
+                                                        #En la salida se ejecuta la función
+
+def run():
+    print(high_order_function(20, increment))
+    print(high_order_function_v2(20,increment_v2))
+
+
+if __name__ == '__main__':
+    run()
+
+```
