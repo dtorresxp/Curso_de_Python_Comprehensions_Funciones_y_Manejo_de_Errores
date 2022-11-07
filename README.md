@@ -589,7 +589,16 @@ except Exception as error:
 print("Hola")
 ```
 
-# Leer un Archivo de Texto 
+# Leer y escribir un Archivo de Texto 
 
+```Python
+with open("./text.txt",'r+',) as file:  #El permiso de r+ permite leer y escribir, sin embargo si se cambia a
+    for line in file:                   #w+ el va a sobreescribir el archivo 
+        print(line)
+    
+    file.write("Nuevas cosas en este archivo\n")
+    file.write("Otra linea\n")
+    file.write("Más linea\n")
 
+```
 
