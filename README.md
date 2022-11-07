@@ -602,3 +602,8 @@ with open("./text.txt",'r+',) as file:  #El permiso de r+ permite leer y escribi
 
 ```
 
+# Leer un CSV
+
+Son archivos que manejan filas y columnas 
+
+
